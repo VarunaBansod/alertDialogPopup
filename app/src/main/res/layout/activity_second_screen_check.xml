@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreenCheck"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="serif"
+        android:text="Dialog Alert Types"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btntype1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Type 1: Alert Dialog PopUp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/type1txt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="In this type of alert you can show popup to perform some actions like to exit app,
+give some permission, etc"
+        app:layout_constraintEnd_toEndOf="@+id/btntype1"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/btntype1"
+        app:layout_constraintTop_toBottomOf="@+id/btntype1" />
+
+    <Button
+        android:id="@+id/btntype2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Type 2: Single Option Select Popup"
+        app:layout_constraintEnd_toEndOf="@+id/type1txt"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/type1txt"
+        app:layout_constraintTop_toBottomOf="@+id/type1txt" />
+
+    <TextView
+        android:id="@+id/type2txt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="In this type of alert you can show popup to select anyone option"
+        app:layout_constraintEnd_toEndOf="@+id/btntype2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/btntype2"
+        app:layout_constraintTop_toBottomOf="@+id/btntype2" />
+
+    <Button
+        android:id="@+id/btntype3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Type 3: Multi Option Select Popup"
+        app:layout_constraintEnd_toEndOf="@+id/type2txt"
+        app:layout_constraintStart_toStartOf="@+id/type2txt"
+        app:layout_constraintTop_toBottomOf="@+id/type2txt" />
+
+    <TextView
+        android:id="@+id/type3txt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="In this type of alert you can show popup to select multiple option"
+        app:layout_constraintEnd_toEndOf="@+id/btntype3"
+        app:layout_constraintStart_toStartOf="@+id/btntype3"
+        app:layout_constraintTop_toBottomOf="@+id/btntype3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="337dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/alert_describe" />
+</androidx.constraintlayout.widget.ConstraintLayout>
